@@ -241,7 +241,10 @@ body {
     color: #000;
     border: 0;
     padding-left: .5em;
-    
+  }
+
+  .nav-list a:hover {
+    border: 0;
   }
 
   .nav-list li {
