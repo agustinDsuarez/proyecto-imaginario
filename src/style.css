@@ -208,12 +208,18 @@ body {
   .primary-navigation {
     display: none;
 
-    position: fixed;
-    margin-inline: auto;
-    padding: var(--size-700);
-    inset: 7rem var(--size-700) auto;
-    max-width: 25rem;
+    position: absolute;
+    
+    /*top bottom left rigt*/
+    inset: 5em 2em auto;
+    max-width: 250px;
+    height: 185px;
     margin-left: auto;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    color: #000;
+    
   }
 
   .primary-header[data-overlay]::before {
@@ -224,9 +230,28 @@ body {
 
   .nav-list {
     display: grid;
-    gap: var(--size-600);
+    gap: var(--size-100);
     text-align: left;
+    padding-top: 0;
+    padding-left: 0;
+
   }
+
+   .nav-list a {
+    color: #000;
+    border: 0;
+    padding-left: .5em;
+    
+  }
+
+  .nav-list li {
+    border-bottom: 1px solid rgba(173, 40, 0, .3);
+  }
+
+  #activo {
+    border: 0;
+  }
+
 
   .primary-navigation[data-visible] {
     display: block;
